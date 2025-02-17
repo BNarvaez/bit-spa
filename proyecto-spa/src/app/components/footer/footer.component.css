@@ -1,0 +1,12 @@
+/* FOOTER */
+
+footer{
+    background:#194973;
+    color: #e9ecef;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+ 

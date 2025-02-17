@@ -1,0 +1,223 @@
+
+
+/* BANNER */
+
+#banner {
+    padding: 0 50px;
+    background-image: url('/proyecto-spa/public/img1.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+ }
+ 
+ #banner::before{
+    content: '';
+    background: rgb(30, 55, 78, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    left: 0;
+ }
+ 
+ .contenido-banner {
+    position: relative;
+    color: #e9ecef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ 
+ .contenido-banner h1{
+    font-size: 50px;
+    font-weight: 800;
+    padding: 10px 0;
+ }
+ 
+ .boton-empezar{
+    text-decoration: none;
+    color: #e9ecef;
+    border: 1px solid #194973;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+ }
+ 
+ .boton-empezar:hover{
+    background: #194973;
+ }
+/* ICONOS */
+
+#iconos{
+    padding: 0px 50px;
+    background:  rgba(30, 55, 78, 0.71);
+    color: #e9ecef;
+ 
+ }
+ 
+ .boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #e9ecef;
+    padding: 10px 30px;
+    border: 3px solid #194973;
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+    transition: all .4s;
+ }
+ 
+ .boton-saber-mas:hover{
+    background: #194973;
+    color: #e9ecef;
+ }
+ 
+ .contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+ }
+ 
+ .contenido-iconos div{
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid #e9ecef;
+ }
+ 
+ #icono-seguro{
+    border: none;
+ }
+ 
+ .contenido-iconos div h6 {
+    color: #e9ecef;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+ }
+ 
+ .contenido-iconos div p{
+    color: #e9ecef;
+    font-size: 15px;
+ }
+ 
+ .boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+ }
+ 
+ 
+ /* FORMULARIO */
+ 
+ #contacto{
+    padding: 50px 0px;
+    color: #194973
+ }
+ 
+ #contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+ #contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+ }
+ 
+ .datos-form{
+    display: flex;
+ }
+ 
+ .datos-form div{
+    padding: 10px;
+    flex: 1;
+ }
+ 
+ form label{
+    display: block;
+    margin-bottom: 10px;
+ }
+ 
+ form input,
+ form textarea{
+    background: #e9ecef;
+    border-radius: 10px;
+    border: 2px solid #194973;
+    padding: 10px 5px;
+    outline: 0;
+    color: #194973;
+    width: 100%;
+ }
+ 
+ form input:focus,
+ form textarea:focus{
+    border-color: #a5d9f4;
+    box-shadow: 0 0 0 1px #a5d9f4;
+ }
+ 
+ form input::placeholder,
+ form textarea::placeholder{
+    color:#194973;
+ }
+ 
+ .mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+ }
+ 
+ .boton-formulario .boton-saber-mas{
+    display: block;
+    border: 1px solid #194973;
+    color: #194973;
+    text-align: center;
+    transition: .5s;
+ }
+ 
+ .boton-formulario .boton-saber-mas:hover{
+    background:#194973;
+    color: #e9ecef;
+ 
+ }
+ 
+ @media screen and (max-width: 766px) {
+   
+    .contenido-iconos{
+       flex-direction: column;
+    }
+ 
+    .contenido-iconos div{
+       border: none;
+    }
+ 
+    /* FORMULARIO */
+ 
+    .datos-form{
+       flex-direction: column;
+    }
+ 
+    h2{
+       font-size: 1.5rem;
+       padding: 10px 10px;
+    }
+ 
+    #personas{
+       flex-direction: column;
+    }
+ 
+ }
+ 
+ @media screen and (max-width: 410px){
+    
+    .contenido-banner h1{
+       font-size: 2.5rem;
+    }
+ }
+ 
+ @media screen and (min-width: 1024px){
+   
+    .caja{
+       width: 280px;
+    }
+ 
+ }
