@@ -1,0 +1,16 @@
+<h2>PokéApi</h2>
+<hr />
+<section class="container">
+  <div class="row row-cols-1 row-cols-md-5 g-4 p-5 text-center">
+    @for (pokemon of pokemons; track $index) {
+    <div class="col">
+      <div class="card">
+        <img src="{{pokemon.image}}" class="card-img-top" alt="{{pokemon.name}}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ pokemon.name }}</h5>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>
