@@ -1,0 +1,27 @@
+<h2>API Rick and Morty</h2>
+<hr />
+@defer (on immediate) {
+    <section class="container">
+        <div class="row row-cols-1 row-cols-md-5 g-4 p-5 text-center">
+          @for (datas of data; track $index) {
+          <div class="col">
+            <div class="card">
+              <img src="{{datas.image}}" class="card-img-top" alt="{{datas.name}}" />
+              <div class="card-body ">
+                <h5 class="card-title ">{{ datas.name }}</h5>
+                <p class="card-text">{{datas.status}}</p>
+                <p class="card-text"><small class="text-body-secondary">{{datas.gender}}</small></p>
+              </div>
+            </div>
+          </div>
+          }
+        </div>
+      </section>
+
+} @placeholder {
+    <p>placeholder</p>
+} @loading (minimum 2s) {
+    <div class="spinner-border text-center m-5" role="status">
+      <span class="visually-hidden text-center">Loading...</span>
+    </div>
+} 

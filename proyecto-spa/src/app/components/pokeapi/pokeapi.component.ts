@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { PokeapiService } from '../../services/pokeapi.service';
+import { TitleCasePipe } from '@angular/common';
 
 
 @Component({
   selector: 'app-pokeapi',
-  imports: [],
+  imports: [TitleCasePipe],
   templateUrl: './pokeapi.component.html',
   styleUrl: './pokeapi.component.css',
 })
@@ -15,6 +16,7 @@ export class PokeapiComponent implements OnInit {
 
   ngOnInit(): void {
     this.obtenerPokemons();
+    
   }
 
   obtenerPokemons(): void {
